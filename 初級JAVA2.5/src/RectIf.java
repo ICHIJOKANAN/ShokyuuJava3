@@ -8,13 +8,13 @@ public class RectIf extends MyFrame
 	  int i ; //繰り返しに使う変数iを宣言
 	  for (i = 0; i < 9; i++ ) 
 	  {
-		  if (i==4)
-		  {
-			  fillRect(x,100,10,100);
-		  }
-		  else if(i==7)
+		  if (i==0)
 		  {
 			  fillRect(x,60,10,100);
+		  }
+		  else if(i==8)
+		  {
+			  fillRect(x,100,10,100);
 		  }
 		  else 
 		  {
