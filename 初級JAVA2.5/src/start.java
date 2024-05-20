@@ -5,7 +5,7 @@ public class start {
 	{
 		// TODO 自動生成されたメソッド・スタブ
      System.out.println("プログラムを実行します");
-     MyFrame frame4 = new RectIf();
+     MyFrame frame2 = new RectIf();
 	}
 
 }
