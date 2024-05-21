@@ -5,26 +5,27 @@ public class RectIf extends MyFrame
   {
 	  int x = 30;
 	  int y = 20;
+	  setColor(0,128,0);
 	  
-	  int a = 0;
-	  int b = 0;
-	  int c = 0;
+	  int a = 15;
+	  int b = 15;
+	 
 	 
 	  int i ; //繰り返しに使う変数iを宣言
-	  for (i = 0; i < 9; i++ ) 
+	  for (i = 0; i < 7; i++ ) 
 		  
 	 
 	  {
-	    setColor(a,b,c);
-		fillRect(x,80,10,100);
-		  
-		  x += 20;
-		  y += 20;
+		  fillRect(x,y,a,b);
+		  x += a;
+		  y += b;
 		  
 		  a += 20;
 		  b += 20;
-		  c += 20;
+		
+		  
 		 
+		  
 		  
 		  
 	  }
