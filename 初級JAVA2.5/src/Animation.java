@@ -1,43 +1,38 @@
 
 public class Animation extends MyFrame
 {
-  public void run()
-  {
-	  int x =30;
-	  int y = 100;
-	  
-		  
-	        while (true) 
-	        {
-	            while (x <= 170)
-	            {
+    int y = 30;
+    int x = 30;
 
-	                //(1)画面を消す
-	                clear();
-
-	                //(2)四角形を表示する
-	                setColor(0, 128, 0);
-	                fillRect(x, y, 10, 100);
-
-	                x += 5;
-	                sleep(0.1);
-	            }
-
-	            while (x >= 30)
-	            {
-
-	                //(1)画面を消す
-	                clear();
-
-	                //(2)四角形を表示する
-	                setColor(0, 128, 0);
-	                fillRect(x, y, 10, 100);
-
-	                x -= 5;
-	                sleep(0.1);
-	            }
-		  
-	        }
-	  
-  }
+    private void MoveRect(int _x, int _y)
+    {
+        //(1)画面を消す
+        clear();
+        //(2)四角形を表示する
+        setColor(0, 128, 0);
+        fillRect(x, y, 10, 100);
+        x += _x;
+        y += _y;
+        sleep(0.1);
+    }
+    public void run() 
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            while (x <= 200)
+            {
+        
+                MoveRect(5, 0);
+                
+            }
+            while (x >= 30) 
+            {
+            	
+                MoveRect(-5, 0);
+                
+            }
+            
+        }
+    }
+  
 }
